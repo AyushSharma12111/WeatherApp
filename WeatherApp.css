@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: rgb(205, 200, 194);
+}
+.container::before{
+    content: " ";
+    width: 100%;
+    height: 100%;  
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    background-size: cover;
+    background-image: url(cool-background.png);
+}
+.weather{
+    display: flex;
+    backdrop-filter: blur(3px);
+    align-items: center;
+    padding: 3rem;
+    border-radius: 30px;
+    gap: 40px;
+}
+.weather1{
+    font-size: 3rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 4vh;
+}
+nav{
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 0 25px rgb(39, 39, 41);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.searchField{
+    font-size: 1rem;
+    outline: none;
+    color: aliceblue;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 98%;
+}
+nav form button{
+    background-color: rgb(114, 115, 100);
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
